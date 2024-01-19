@@ -1,0 +1,149 @@
+ <!DOCTYPE html>
+ <html lang="en" data-theme="light">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" /> 
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              color:'#E76F51',
+              bike: 'rgba(231, 111, 81, 0.10)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .logo{
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+ </head>
+ <body>
+    <header class="">
+      <div class="navbar bg-sky-400 lg:px-16 sm:px-5 py-2 ">
+        <div class=" flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 font-extrabold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="   menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href=""  >Home</a></li>
+            <li><a href=""  >Shop</a></li>
+            <li><a href=""  >News</a></li>
+            <li><a href=""  >Contact</a></li>
+            </ul>
+          </div>
+          <a class="logo  font-bold uppercase text-4xl">Shahadat</a>
+        </div>
+        <div class="navbar-center hidden lg:flex space-x-1">
+          <ul class="  menu menu-horizontal px-1 text-white">
+            <li><a href="" >Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class=" pl-10 ">
+          <a class=" btn btn-error border-0 cursor-pointer bg-color px-10 text-[#fff]">Login</a>
+        </div>
+      </div>
+
+      <section class="lg:mx-16 sm:mx-5 my-16">
+         <div class="carousel w-full bg-bike">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class=" space-y-12 lg:flex   lg:px-20 px-8 lg:py-14 py-6 ">
+            <div class="space-y-7">
+              <h2 class="logo lgtext-6xl text-3xl  ">Ride-on R15 V4 <br> with Smile</h2>
+              <p class="lg:w-3/4">Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <div>
+                  <a href=""  class="btn btn-error bg-color px-10 border-0 cursor-pointer text-[#fff]">Purchase</a>
+                </div>
+            </div>
+            <div>
+              <img src="images/images/slider/bike1.png" alt="">
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full"> 
+          <div class=" lg:flex   lg:px-20 px-8 lg:py-14 py-6">
+            <div class="space-y-7">
+              <h2 class="logo lg:text-6xl  text-3xl">Ride-on R15 V4 <br> with Smile</h2>
+              <p class="w-3/4">Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <div>
+                  <a href=""  class="btn btn-error bg-color px-10 border-0 cursor-pointer text-[#fff]">Purchase</a>
+                </div>
+            </div>
+            <div>
+              <img src="images/images/slider/bike2.png" alt="">
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class=" lg:flex  lg:px-20 px-8 lg:py-14 py-6">
+            <div class="space-y-7">
+              <h2 class="logo lg:text-6xl text-3xl  ">Ride-on R15 V4 <br> with Smile</h2>
+              <p class="w-3/4">Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <div>
+                  <a href=""  class="btn btn-error bg-color px-10 border-0 cursor-pointer text-[#fff]">Purchase</a>
+                </div>
+            </div>
+            <div>
+              <img src="images/images/slider/bike3.png" alt="">
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class=" lg:flex  lg:px-20 px-8 lg:py-14 py-6">
+            <div class="space-y-7">
+              <h2 class="logo lg:text-6xl text-3xl  ">Ride-on R15 V4 <br> with Smile</h2>
+              <p class="w-3/4">Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <div>
+                  <a href=""  class="btn btn-error bg-color px-10 border-0 cursor-pointer text-[#fff]">Purchase</a>
+                </div>
+            </div>
+            <div>
+              <img src="images/images/slider/bike4.png" alt="">
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      </section>
+     
+      
+    </header>
+    
+  
+ </body>
+ </html>
